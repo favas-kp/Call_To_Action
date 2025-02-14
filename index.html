@@ -4,17 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card</title>
+    <style>
+      * {
+        margin: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+        font-weight: 100;
+      }
+
+      .card-container {
+        border: 1px solid #0000002e;
+        width: 400px;
+        margin: 45px;
+        padding: 40px;
+      }
+
+      .card-head {
+        font-size: 30px;
+        font-weight: 100;
+        color: #00000098;
+      }
+
+      .card-divider {
+        width: 40px;
+        height: 2px;
+        border: none;
+        background-color: black;
+        margin: 18px 0;
+      }
+
+      .try-now-button {
+        padding: 7px;
+        text-align: center;
+        background-color: #4184e1;
+        color: white;
+        margin: 20px 0;
+        border-radius: 20px;
+      }
+
+      .card-body {
+        color: #00000079;
+        font-size: 15px;
+        word-spacing: 1px;
+        line-height: 18px;
+      }
+
+      .card-disclaimer {
+        color: #00000057;
+        font-size: 11px;
+        line-height: 15px;
+      }
+    </style>
   </head>
   <body>
-    <article>
-      <h1 id="article-head">Build your first chatbot in 10 minutes!</h1>
-      <hr />
-      <p>
+    <article class="card-container">
+      <h1 class="card-head">Build your first chatbot in 10 minutes!</h1>
+      <hr class="card-divider" />
+      <p class="card-body">
         Have a bot answering questions from customers on your website within 10
-        mins of signing up for ChatBot
+        minutes of signing up for ChatBot
       </p>
-      <div class="try-now-button">TRY NOW</div>
-      <p>
+      <div class="try-now-button">TRY NOW &rarr;</div>
+      <p class="card-disclaimer">
         By clicking try now you create an account and agree to our Terms and
         Conditions and Privacy Policy
       </p>
